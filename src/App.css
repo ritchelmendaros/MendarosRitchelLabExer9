@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 .App-logo {
@@ -14,12 +17,12 @@
 }
 
 .App-header {
+  font-family: 'Poppins', sans-serif;
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -28,6 +31,15 @@
   color: #61dafb;
 }
 
+.App-footer {
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 680px;
+  position: fixed;
+  color: white;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +47,165 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+h1 {
+  margin-top: 70px;
+}
+
+label {
+  font-size: 16px;
+}
+
+.binaryinput,
+.encodingdropdown {
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  width: 350px;
+  color: rgb(53, 53, 53);
+}
+
+
+.data-table {
+  margin: 50px auto;
+  border-collapse: collapse;
+  min-width: 50%;
+  background-color: #ffffff;
+  border: 4px solid #ccc;
+}
+
+.data-table td {
+  border: 2px solid #ccc;
+  padding: 20px;
+  position: relative; 
+  height: 70px; 
+  color: black;
+  background-color: #ffffff; 
+}
+
+.data-table th {
+  border: 2px solid #ccc;
+  padding: 10px;
+  position: relative; 
+  height: 20px; 
+  color: black;
+  font-size: 18px;
+  background-color: #feecec; 
+}
+
+.line {
+  position: absolute;
+  width: 100%; 
+  background-color: black; 
+}
+
+.verticalline-full {
+  top: 0;
+  height: 100%; 
+  position: absolute;
+  left: 0;
+  width: 5px; 
+  background-color: rgb(79, 79, 79); 
+}
+
+.verticalline-upperhalf {
+  top: 0; 
+  height: 54.5%; 
+  position: absolute;
+  left: 0;
+  width: 5px; 
+  background-color: rgb(79, 79, 79);
+  transform: translateX(-50%);
+}
+
+.verticalline-lowerhalf {
+  bottom: 0; 
+  height: 50%; 
+  top: 50; 
+  position: absolute;
+  left: 0;
+  width: 5px; 
+  background-color: rgb(79, 79, 79);
+  transform: translateX(-50%);
+}
+
+.line-low {
+  bottom: 0; 
+  height: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 102%; 
+  background-color: rgb(79, 79, 79); 
+}
+
+.line-high {
+  top: 0; 
+  height: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 102%; 
+  background-color: rgb(79, 79, 79); 
+}
+
+.line-no-signal {
+  top: 50; 
+  height: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 102%; 
+  background-color: rgb(79, 79, 79); 
+}
+
+.line-low-to-high-lowerhalf {
+  bottom: 0; 
+  height: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 50%; 
+  background-color: rgb(79, 79, 79); 
+}
+
+.line-low-to-high-upperhalf {
+  top: 0px; 
+  height: 5px;
+  position: absolute;
+  left: 51%;
+  right: 0;
+  width: 51%; 
+  background-color: rgb(79, 79, 79); 
+}
+
+.verticalline-manchesterfull {
+  top: 0;
+  height: 100%; 
+  position: absolute;
+  left: 50%;
+  width: 5px; 
+  background-color: rgb(79, 79, 79); 
+}
+
+.line-high-to-low-lowerhalf {
+  bottom: 0; 
+  height: 5px;
+  position: absolute;
+  left: 50%;
+  right: 0;
+  width: 51%; 
+  background-color: rgb(79, 79, 79); 
+}
+
+.line-high-to-low-upperhalf {
+  top: 0; 
+  height: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 50%; 
+  background-color: rgb(79, 79, 79); 
 }
